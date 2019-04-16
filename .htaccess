@@ -1,0 +1,15 @@
+#activer la réécriture des URLs des requêtes à la volée
+RewriteEngine on
+#dans le cas d'un hébergement dans un alias il faut définir l'URL de base
+RewriteBase /conteneurs/
+
+#Définir les conditions pour que la réécriture soit effectuée
+#Pour toutes les URL qui ne commencent pas (après RewriteBase)
+#par index.php ou assets ou robots.txt
+RewriteCond $1 !^(index\.php|assets|robots\.txt)
+
+#Définir les règles pour le moteur de réécriture
+#Quelque soit le chemin d'URL demandée (.*) on redirige vers index.php
+#Ex : /C_conteneur/5 sera redirigé vers /index.php/C_conteneur/5
+RewriteRule ^(.*)$ index.php/$1 [L]
+

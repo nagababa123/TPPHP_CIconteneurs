@@ -1,0 +1,117 @@
+/* CSS Document */
+body  {
+    font: 100% Verdana, Arial, Helvetica, sans-serif;
+    background-color: #FFFFFF;
+    margin: 0; 	/* il est conseillé de mettre à zéro la marge et le remplissage de l'élément body, 
+                            pour tenir compte des différentes valeurs par défaut des navigateurs */
+    padding: 0;
+    text-align: center; 	/* ce paramétrage centre le conteneur dans les navigateurs IE 5.x. 
+                                                    Le texte est ensuite aligné à gauche (valeur par défaut) dans le sélecteur #conteneur */
+    color: #000000;
+    background-image: url(img/back.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+#conteneur { 
+    width: 1200px;  	/* paramétrage de la largeur à 20 pixels de moins que le plein écran (1024 pixels) pour 
+                                    tenir compte de l'habillage du navigateur et éviter l'apparition d'un ascenseur horizontal */
+    background: #FFFFFF;
+    margin: auto; 	/* les marges automatiques (et dotées d'une largeur positive) centrent la page */
+
+    text-align: left; 	/* ce paramétrage annule le paramètre text-align: center de l'élément body. */
+} 
+header {
+    height:216px;
+    background-color:#FFFFFF;
+    background: url(img/bandeau.jpg) no-repeat left top ;
+}
+header h1
+{
+    color: rgb(226,1,107);
+    font-size: 1.3em;
+    padding: 20px 0px 0px 700px;
+    margin: 0;
+}
+nav {
+    padding: 1px 0 1px 0;
+
+}
+section {
+    background-color:#FFFFFF;
+    margin: 0 0 0 00px; 	/* Haut Droite bas Gauche. */
+    padding: 0 00px; 	/* ne pas oublier que le remplissage est l'espace à l'intérieur du cadre de l'élément div, 
+                                            alors que la marge est l'espace à l'extérieur de celui-ci */
+    font-size: 100%;
+}
+footer {
+
+    clear:both;
+    font: 70% Verdana, Arial, Helvetica, sans-serif;
+    color: #002f53;
+    text-align: left;
+    padding: 5px 0 10px 0px;
+    margin-top: 50px;
+    border-top: 2px solid rgb(0,165,171);
+}
+article h1
+{
+    /* Mise en forme du titre de page, une petite image, on décale le texte en fonction de l'image, 
+    on donne un couleur au texte et on met une bordure basse */
+    padding-left: 25px ;
+    line-height: 25px ;
+    font-size: 110% ;
+    background: url(img/puce_h1.png) no-repeat left bottom ;
+    color: rgb(226,1,107) ;
+    border-bottom: 1px solid rgb(226,1,107) ;
+}
+
+nav ul
+{
+    height: 27px ;
+    margin: 0 ;
+    padding: 0 ;
+    list-style-type: none ;	/* on cache les puces */
+    background-color: rgb(0,165,171);
+
+}
+nav ul li
+{
+    text-align: center ;
+    line-height: 27px ;
+    color: white ;
+    font-size: 90% ;
+    font-weight: bold ;
+    background-color: rgb(0,165,171);
+    float: left ;
+    display: block ; /* permet d'appliquer l'effet de roll-over à toute la "case" du lien et pas seulement au texte */
+    /*    width: 200px ;*/
+    margin: 0 10px;
+
+}
+
+nav ul li a
+{
+    color: white ;
+    text-decoration: none ;
+    display: block ; /* permet d'appliquer l'effet de roll-over à toute la "case" du lien et pas seulement au texte */
+    /*    width: 200px ;*/
+    padding: 0 10px;
+
+}
+
+nav ul li a:hover
+{
+    background-color: rgb(226,1,107);
+    color: white ;
+    display: block ; /* permet d'appliquer l'effet de roll-over à toute la "case" du lien et pas seulement au texte */
+}
+
+.imgfloat
+{
+    float: left;
+    margin: 0px 15px 5px 0px;
+}
+article{
+    clear: both;
+}
+
